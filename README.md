@@ -6,6 +6,8 @@
 
 This repository contains an automated, end-to-end DataOps pipeline designed to extract, transform, and visualize High-Performance Computing (HPC) metrics. Specifically, it analyzes the **NAS Parallel Benchmarks (NPB-CG)** to expose the "Memory Wall" effect and evaluate multi-threaded scalability bottlenecks.
 
+> **📑 In-Depth Analysis & Logs:** Inside the [`docs/`](./docs/) directory, you will find my comprehensive analysis of different NAS Parallel Benchmarks, alongside the raw execution logs, mathematical bandwidth models, and detailed architectural breakdowns.
+
 ## The Problem: The Memory Wall
 
 Sparse matrix computations (like Conjugate Gradient) exhibit highly irregular memory access patterns. This defeats spatial locality in CPU caches, starving the processor of data. This project proves empirically how adding more threads to a memory-bound problem on legacy hardware (Intel Xeon Westmere) leads to performance degradation, and how modern architectures (AMD Ryzen Zen 3) overcome it.
@@ -44,17 +46,27 @@ The project strictly separates concerns, applying software engineering best prac
 
 ```text
 .
-├── data/ # Raw Intel PIN logs & generated CSVs
-├── plots/ # Auto-generated visualization artifacts
+├── data/                  # Raw Intel PIN logs & generated CSVs
+├── notebooks/             # Jupyter environment for interactive EDA
+├── plots/                 # Auto-generated visualization artifacts
 ├── scripts/
-│ ├── etl.py # Data Extraction & Transformation (Parsers)
-│ ├── visualizations.py # Matplotlib plotting logic
-│ ├── analyze_performance.py # Main Orchestrator
-│ └── compare_architectures.py # Cross-CPU comparison logic
-└── Makefile # The brains of the automation
+│   ├── etl.py             # Data Extraction & Transformation (Parsers)
+│   ├── visualizations.py  # Matplotlib plotting logic
+│   ├── analyze_performance.py # Main Orchestrator
+│   └── compare_architectures.py # Cross-CPU comparison logic
+└── Makefile               # The brains of the automation
+
 ```
 
 ---
+
+### Interactive Exploratory Data Analysis (EDA)
+
+For a step-by-step walkthrough of the visualization logic, dynamic chart rendering, and exploratory data analysis, you can launch the provided Jupyter environment. This is especially useful for inspecting the Pandas DataFrames before they are plotted.
+
+```bash
+jupyter notebook notebooks/npb_analysis.ipynb
+```
 
 ## Usage & Automation
 
@@ -105,6 +117,15 @@ make fclean
 
 ---
 
-## Technical Documentation
+## Resources & References
 
-For the comprehensive mathematical bandwidth models, architectural breakdowns, and final conclusions, please refer to the technical report located in the `docs/` directory.
+If you want to dive deeper into the tools and frameworks used in this project, here are the official references and documentation:
+
+- **NAS Parallel Benchmarks (NPB):**
+  - [Official NASA NPB Website](https://www.nas.nasa.gov/software/npb.html)
+  - [NAS Parallel Benchmarks - Wikipedia](https://en.wikipedia.org/wiki/NAS_Parallel_Benchmarks)
+- **Instrumentation & Profiling:**
+  - [Intel PIN - A Dynamic Binary Instrumentation Tool](https://www.intel.com/content/www/us/en/developer/articles/tool/pin-a-dynamic-binary-instrumentation-tool.html)
+  - [Linux `perf` PMU Profiling](https://perf.wiki.kernel.org/index.php/Main_Page)
+- **Cluster Management:**
+  - [Open Grid Engine (OGE) Documentation](http://gridscheduler.sourceforge.net/)
