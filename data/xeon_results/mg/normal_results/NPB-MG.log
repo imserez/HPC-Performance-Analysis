@@ -1,0 +1,860 @@
+Executing mg.S with 1 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:   32x  32x  32  (class S)
+ Iterations:                      4
+ Number of available threads:     1
+
+ Initialization time:           0.008 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.530770700573E-04
+ Error is     0.919595345031E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        S
+ Size            =             32x  32x  32
+ Iterations      =                        4
+ Time in seconds =                     0.02
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                   500.57
+ Mop/s/thread    =                   500.57
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              25 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+0.02user 0.00system 0:00.06elapsed 35%CPU (0avgtext+0avgdata 8176maxresident)k
+96inputs+8outputs (1major+541minor)pagefaults 0swaps
+Executing mg.S with 2 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:   32x  32x  32  (class S)
+ Iterations:                      4
+ Number of available threads:     2
+
+ Initialization time:           0.004 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.530770700573E-04
+ Error is     0.919850681792E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        S
+ Size            =             32x  32x  32
+ Iterations      =                        4
+ Time in seconds =                     0.01
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                   980.40
+ Mop/s/thread    =                   490.20
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              25 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+0.02user 0.00system 0:00.01elapsed 157%CPU (0avgtext+0avgdata 8288maxresident)k
+0inputs+8outputs (0major+555minor)pagefaults 0swaps
+Executing mg.S with 4 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:   32x  32x  32  (class S)
+ Iterations:                      4
+ Number of available threads:     4
+
+ Initialization time:           0.002 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.530770700573E-04
+ Error is     0.920744360456E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        S
+ Size            =             32x  32x  32
+ Iterations      =                        4
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  2013.86
+ Mop/s/thread    =                   503.46
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              25 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+0.02user 0.00system 0:00.00elapsed 262%CPU (0avgtext+0avgdata 8336maxresident)k
+0inputs+16outputs (0major+570minor)pagefaults 0swaps
+Executing mg.S with 8 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:   32x  32x  32  (class S)
+ Iterations:                      4
+ Number of available threads:     8
+
+ Initialization time:           0.008 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.530770700573E-04
+ Error is     0.919723013412E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        S
+ Size            =             32x  32x  32
+ Iterations      =                        4
+ Time in seconds =                     0.02
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                   453.23
+ Mop/s/thread    =                    56.65
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              25 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+0.03user 0.01system 0:00.02elapsed 181%CPU (0avgtext+0avgdata 8480maxresident)k
+0inputs+8outputs (0major+568minor)pagefaults 0swaps
+Executing mg.W with 1 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  128x 128x 128  (class W)
+ Iterations:                      4
+ Number of available threads:     1
+
+ Initialization time:           0.329 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.646732937534E-05
+ Error is     0.143413304536E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        W
+ Size            =            128x 128x 128
+ Iterations      =                        4
+ Time in seconds =                     0.77
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                   630.23
+ Mop/s/thread    =                   630.23
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+1.08user 0.00system 0:01.10elapsed 99%CPU (0avgtext+0avgdata 230880maxresident)k
+96inputs+8outputs (1major+1174minor)pagefaults 0swaps
+Executing mg.W with 2 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  128x 128x 128  (class W)
+ Iterations:                      4
+ Number of available threads:     2
+
+ Initialization time:           0.176 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.646732937534E-05
+ Error is     0.125732212196E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        W
+ Size            =            128x 128x 128
+ Iterations      =                        4
+ Time in seconds =                     0.39
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                  1233.88
+ Mop/s/thread    =                   616.94
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+1.12user 0.01system 0:00.57elapsed 198%CPU (0avgtext+0avgdata 231008maxresident)k
+0inputs+16outputs (0major+1188minor)pagefaults 0swaps
+Executing mg.W with 4 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  128x 128x 128  (class W)
+ Iterations:                      4
+ Number of available threads:     4
+
+ Initialization time:           0.104 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.646732937534E-05
+ Error is     0.132149793861E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        W
+ Size            =            128x 128x 128
+ Iterations      =                        4
+ Time in seconds =                     0.21
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  2370.51
+ Mop/s/thread    =                   592.63
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+1.19user 0.03system 0:00.31elapsed 394%CPU (0avgtext+0avgdata 231056maxresident)k
+0inputs+8outputs (0major+1200minor)pagefaults 0swaps
+Executing mg.W with 8 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  128x 128x 128  (class W)
+ Iterations:                      4
+ Number of available threads:     8
+
+ Initialization time:           0.131 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.646732937534E-05
+ Error is     0.123243762163E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        W
+ Size            =            128x 128x 128
+ Iterations      =                        4
+ Time in seconds =                     0.26
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  1888.92
+ Mop/s/thread    =                   236.12
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+1.23user 0.04system 0:00.39elapsed 325%CPU (0avgtext+0avgdata 231200maxresident)k
+0inputs+8outputs (0major+1208minor)pagefaults 0swaps
+Executing mg.A with 1 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class A)
+ Iterations:                      4
+ Number of available threads:     1
+
+ Initialization time:           2.559 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.243336530907E-05
+ Error is     0.297791985311E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        A
+ Size            =            256x 256x 256
+ Iterations      =                        4
+ Time in seconds =                     6.09
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                   639.53
+ Mop/s/thread    =                   639.53
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+8.55user 0.07system 0:08.65elapsed 99%CPU (0avgtext+0avgdata 1772240maxresident)k
+96inputs+16outputs (1major+1441minor)pagefaults 0swaps
+Executing mg.A with 2 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class A)
+ Iterations:                      4
+ Number of available threads:     2
+
+ Initialization time:           1.368 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.243336530907E-05
+ Error is     0.274992014490E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        A
+ Size            =            256x 256x 256
+ Iterations      =                        4
+ Time in seconds =                     3.13
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                  1245.06
+ Mop/s/thread    =                   622.53
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+8.85user 0.11system 0:04.49elapsed 199%CPU (0avgtext+0avgdata 1772384maxresident)k
+0inputs+8outputs (0major+1454minor)pagefaults 0swaps
+Executing mg.A with 4 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class A)
+ Iterations:                      4
+ Number of available threads:     4
+
+ Initialization time:           0.831 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.243336530907E-05
+ Error is     0.226607343586E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        A
+ Size            =            256x 256x 256
+ Iterations      =                        4
+ Time in seconds =                     1.63
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  2381.65
+ Mop/s/thread    =                   595.41
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+9.57user 0.21system 0:02.46elapsed 396%CPU (0avgtext+0avgdata 1772464maxresident)k
+0inputs+8outputs (0major+1476minor)pagefaults 0swaps
+Executing mg.A with 8 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class A)
+ Iterations:                      4
+ Number of available threads:     8
+
+ Initialization time:           0.895 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.243336530907E-05
+ Error is     0.217556973489E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        A
+ Size            =            256x 256x 256
+ Iterations      =                        4
+ Time in seconds =                     1.85
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  2099.18
+ Mop/s/thread    =                   262.40
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              04 Oct 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+9.45user 0.23system 0:02.75elapsed 351%CPU (0avgtext+0avgdata 1789008maxresident)k
+0inputs+16outputs (0major+1487minor)pagefaults 0swaps
+Executing mg.B with 1 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class B)
+ Iterations:                     20
+ Number of available threads:     1
+
+ Initialization time:           2.560 seconds
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.180056440136E-05
+ Error is     0.271047904766E-11
+
+
+ MG Benchmark Completed.
+ Class           =                        B
+ Size            =            256x 256x 256
+ Iterations      =                       20
+ Time in seconds =                    28.11
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                   692.43
+ Mop/s/thread    =                   692.43
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              24 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+30.49user 0.08system 0:30.67elapsed 99%CPU (0avgtext+0avgdata 1772240maxresident)k
+96inputs+8outputs (1major+1441minor)pagefaults 0swaps
+Executing mg.B with 2 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class B)
+ Iterations:                     20
+ Number of available threads:     2
+
+ Initialization time:           1.355 seconds
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.180056440136E-05
+ Error is     0.267260972612E-11
+
+
+ MG Benchmark Completed.
+ Class           =                        B
+ Size            =            256x 256x 256
+ Iterations      =                       20
+ Time in seconds =                    14.43
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                  1349.13
+ Mop/s/thread    =                   674.56
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              24 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+31.34user 0.13system 0:15.78elapsed 199%CPU (0avgtext+0avgdata 1772368maxresident)k
+0inputs+8outputs (0major+1455minor)pagefaults 0swaps
+Executing mg.B with 4 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class B)
+ Iterations:                     20
+ Number of available threads:     4
+
+ Initialization time:           0.815 seconds
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.180056440136E-05
+ Error is     0.267002238118E-11
+
+
+ MG Benchmark Completed.
+ Class           =                        B
+ Size            =            256x 256x 256
+ Iterations      =                       20
+ Time in seconds =                     7.60
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  2562.02
+ Mop/s/thread    =                   640.50
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              24 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+33.31user 0.23system 0:08.41elapsed 398%CPU (0avgtext+0avgdata 1772464maxresident)k
+0inputs+16outputs (0major+1476minor)pagefaults 0swaps
+Executing mg.B with 8 threads
+
+
+ NAS Parallel Benchmarks (NPB3.2-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class B)
+ Iterations:                     20
+ Number of available threads:     8
+
+ Initialization time:           0.899 seconds
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is   0.180056440136E-05
+ Error is     0.268542884428E-11
+
+
+ MG Benchmark Completed.
+ Class           =                        B
+ Size            =            256x 256x 256
+ Iterations      =                       20
+ Time in seconds =                     8.36
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  2327.66
+ Mop/s/thread    =                   290.96
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.2
+ Compile date    =              24 Apr 2013
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O  -fopenmp -mcmodel=medium
+    FLINKFLAGS   = -O  -fopenmp -mcmodel=medium
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+33.04user 0.30system 0:09.26elapsed 359%CPU (0avgtext+0avgdata 1772688maxresident)k
+0inputs+8outputs (0major+1487minor)pagefaults 0swaps

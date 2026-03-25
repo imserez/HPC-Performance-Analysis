@@ -24,4 +24,8 @@ data/ryzen_csv/
 Thumbs.db
 *~
 
-#plots/
+# 1. Ignore all generated plots
+plots/*
+
+# 2. Add an exception for the CG benchmark (Featured in README)
+!plots/cg/

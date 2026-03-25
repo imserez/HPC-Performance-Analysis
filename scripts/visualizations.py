@@ -315,26 +315,40 @@ def plot_ipc_efficiency(df, target_app, style, plot_dir, interactive=False):
         ].sort_values('Threads')
         if subset.empty: continue
 
-        # Calculate Relative IPC: Instructions / (Time * Frequency)
-        # We use instructions per second / frequency to get a proxy of IPC
-        ipc_proxy = (subset['Total_Instructions'] / subset['Time_s']) / (FREQ_GHZ * 1e9)
+        # --- PROTECTED CALCULATION ---
+        # Prevent division by zero if Time_s is 0.0 (common in IS.S/IS.W)
+        with np.errstate(divide='ignore', invalid='ignore'):
+            ipc_proxy = (subset['Total_Instructions'] / subset['Time_s']) / (FREQ_GHZ * 1e9)
+
+        # Filter non-finite values (NaN, Inf) for axis scaling
+        clean_ipc = ipc_proxy[np.isfinite(ipc_proxy)]
+        miss_rate = subset['load-misses_rate'].fillna(0)
 
         x_labels = [f"{t}T" for t in subset['Threads']]
 
-        # --- EJE 1: IPC (Línea Azul con Marcador de la clase) ---
-        ax1.plot(x_labels, ipc_proxy, marker=style['markers'][prob], color='tab:blue',
+        # --- AXIS 1: IPC (Blue Line) ---
+        # Replace Inf/NaN with 0 for plotting
+        y_ipc = ipc_proxy.replace([np.inf, -np.inf], 0).fillna(0)
+        ax1.plot(x_labels, y_ipc, marker=style['markers'][prob], color='tab:blue',
                  linewidth=3, markersize=10, label='Relative IPC')
 
-        # --- EJE 2: Miss Rate (Área sombreada Roja) ---
-        ax2.fill_between(x_labels, subset['load-misses_rate'], color='tab:red', alpha=0.2, label='L1 Miss Rate %')
-        ax2.plot(x_labels, subset['load-misses_rate'], color='tab:red', linestyle='--', alpha=0.6)
+        # --- AXIS 2: Miss Rate (Red Shaded Area) ---
+        ax2.fill_between(x_labels, miss_rate, color='tab:red', alpha=0.2, label='L1 Miss Rate %')
+        ax2.plot(x_labels, miss_rate, color='tab:red', linestyle='--', alpha=0.6)
 
         ax1.set_title(f"Efficiency Analysis: {prob.upper()}", fontsize=14, fontweight='bold')
         ax1.set_ylabel('Relative IPC (Efficiency)', color='tab:blue', fontweight='bold')
         ax2.set_ylabel('L1 Miss Rate (%)', color='tab:red', fontweight='bold')
-        ax1.set_ylim(0, max(ipc_proxy) * 1.3 if not ipc_proxy.empty else 1)
+
+        # --- SAFE LIMIT ADJUSTMENT ---
+        if not clean_ipc.empty and clean_ipc.max() > 0:
+            ax1.set_ylim(0, clean_ipc.max() * 1.3)
+        else:
+            ax1.set_ylim(0, 1) # Fallback for near-zero execution times
+
         ax1.grid(axis='y', linestyle=':', alpha=0.5)
 
+    # Global Legend
     legend_elements = [
         Line2D([0], [0], color='tab:blue', marker='o', linewidth=3, label='IPC (Processor Efficiency)'),
         Patch(facecolor='tab:red', alpha=0.2, label='Cache Misses (Memory Wall Weight)')
