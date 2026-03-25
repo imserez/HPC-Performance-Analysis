@@ -8,6 +8,7 @@ The workflow is designed to be reproducible, extensible, and easy to use through
 
 ## Project Structure
 
+```text
 .
 ├── data/
 │ ├── xeon_results/ # Raw benchmark outputs (Intel Xeon)
@@ -231,3 +232,4 @@ This project provides a structured and automated way to:
 - Compare architectures
 
 It is intended both as a practical analysis tool and as a foundation for further experimentation.
+```
