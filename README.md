@@ -233,7 +233,3 @@ This project provides a structured and automated way to:
 - Compare architectures
 
 It is intended both as a practical analysis tool and as a foundation for further experimentation.
-
-```
-
-```
