@@ -1,0 +1,490 @@
+===========================================================
+ RESULTADOS RYZEN 7 5800HS - CG CLASE S 
+===========================================================
+Fecha: Mon Mar 23 04:42:42 PM CET 2026
+
+
+-----------------------------------------------------------
+ TEST CON 1 HILOS
+-----------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+ Number of available threads:     1
+
+ Initialization time =           0.009 seconds
+
+   iteration           ||r||                 zeta
+        1       0.13623015589277E-12     9.9986441579140
+        2       0.21476754135325E-14     8.5733279203222
+        3       0.21489595552863E-14     8.5954510374058
+        4       0.19047680767243E-14     8.5969972340737
+        5       0.19758266522633E-14     8.5971549151767
+        6       0.19291056797071E-14     8.5971744311608
+        7       0.18870125807855E-14     8.5971770704913
+        8       0.20326934466322E-14     8.5971774440630
+        9       0.20037265806070E-14     8.5971774983942
+       10       0.18513780741124E-14     8.5971775064409
+       11       0.18148817438687E-14     8.5971775076486
+       12       0.19721394837121E-14     8.5971775078318
+       13       0.18651848872070E-14     8.5971775078598
+       14       0.16938346053859E-14     8.5971775078641
+       15       0.18392587450663E-14     8.5971775078648
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.8597177507865E+01
+ Error is    0.1033104665906E-14
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.02
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                  2695.35
+ Mop/s/thread    =                  2695.35
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              23 Mar 2026
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = gfortran
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp -march=native -fallow-invalid-boz
+    FLINKFLAGS   = -O3 -fopenmp -march=native
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+ Performance counter stats for './bin/cg.S.x':
+
+       117,072,552      L1-dcache-loads                                                       
+         7,588,565      L1-dcache-load-misses            #    6.48% of all L1-dcache accesses 
+        15,356,379      cache-references                                                      
+           673,513      cache-misses                     #    4.39% of all cache refs         
+
+       0.036249227 seconds time elapsed
+
+       0.030205000 seconds user
+       0.006041000 seconds sys
+
+
+
+
+-----------------------------------------------------------
+ TEST CON 2 HILOS
+-----------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+ Number of available threads:     2
+
+ Initialization time =           0.005 seconds
+
+   iteration           ||r||                 zeta
+        1       0.13823083662613E-12     9.9986441579140
+        2       0.21514379462294E-14     8.5733279203222
+        3       0.22081976495675E-14     8.5954510374058
+        4       0.19632180322580E-14     8.5969972340737
+        5       0.19834255535846E-14     8.5971549151767
+        6       0.19725842271675E-14     8.5971744311608
+        7       0.19101240423489E-14     8.5971770704913
+        8       0.19491939052549E-14     8.5971774440630
+        9       0.20370752483193E-14     8.5971774983942
+       10       0.17621763680572E-14     8.5971775064409
+       11       0.18394248686222E-14     8.5971775076486
+       12       0.17962981004775E-14     8.5971775078318
+       13       0.18855328810312E-14     8.5971775078598
+       14       0.17805212856657E-14     8.5971775078641
+       15       0.19111850947288E-14     8.5971775078648
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.8597177507865E+01
+ Error is    0.1033104665906E-14
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.01
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                  5028.40
+ Mop/s/thread    =                  2514.20
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              23 Mar 2026
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = gfortran
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp -march=native -fallow-invalid-boz
+    FLINKFLAGS   = -O3 -fopenmp -march=native
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+ Performance counter stats for './bin/cg.S.x':
+
+       118,024,744      L1-dcache-loads                                                       
+         7,740,867      L1-dcache-load-misses            #    6.56% of all L1-dcache accesses 
+        13,325,390      cache-references                                                      
+           891,180      cache-misses                     #    6.69% of all cache refs         
+
+       0.020327632 seconds time elapsed
+
+       0.033948000 seconds user
+       0.004849000 seconds sys
+
+
+
+
+-----------------------------------------------------------
+ TEST CON 4 HILOS
+-----------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+ Number of available threads:     4
+
+ Initialization time =           0.003 seconds
+
+   iteration           ||r||                 zeta
+        1       0.13639965310543E-12     9.9986441579140
+        2       0.21247422198008E-14     8.5733279203222
+        3       0.21585437116341E-14     8.5954510374058
+        4       0.19256839262070E-14     8.5969972340738
+        5       0.19005310538946E-14     8.5971549151767
+        6       0.19252102753551E-14     8.5971744311608
+        7       0.19805524325312E-14     8.5971770704913
+        8       0.19029191482159E-14     8.5971774440630
+        9       0.20551024867045E-14     8.5971774983942
+       10       0.17923478303057E-14     8.5971775064409
+       11       0.18497929800598E-14     8.5971775076486
+       12       0.18658567073477E-14     8.5971775078318
+       13       0.18300523355830E-14     8.5971775078598
+       14       0.18575935140342E-14     8.5971775078641
+       15       0.18302146864868E-14     8.5971775078648
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.8597177507865E+01
+ Error is    0.1239725599088E-14
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.01
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  9376.74
+ Mop/s/thread    =                  2344.18
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              23 Mar 2026
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = gfortran
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp -march=native -fallow-invalid-boz
+    FLINKFLAGS   = -O3 -fopenmp -march=native
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+ Performance counter stats for './bin/cg.S.x':
+
+       119,730,223      L1-dcache-loads                                                       
+         7,936,058      L1-dcache-load-misses            #    6.63% of all L1-dcache accesses 
+        10,432,517      cache-references                                                      
+           882,657      cache-misses                     #    8.46% of all cache refs         
+
+       0.012405206 seconds time elapsed
+
+       0.041066000 seconds user
+       0.002053000 seconds sys
+
+
+
+
+-----------------------------------------------------------
+ TEST CON 8 HILOS
+-----------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+ Number of available threads:     8
+
+ Initialization time =           0.003 seconds
+
+   iteration           ||r||                 zeta
+        1       0.13784553395621E-12     9.9986441579140
+        2       0.21061552338158E-14     8.5733279203222
+        3       0.21666425705254E-14     8.5954510374058
+        4       0.19167189897339E-14     8.5969972340737
+        5       0.19209653483133E-14     8.5971549151767
+        6       0.18727417063872E-14     8.5971744311608
+        7       0.19075045256286E-14     8.5971770704913
+        8       0.19092997056696E-14     8.5971774440630
+        9       0.21465275348620E-14     8.5971774983942
+       10       0.18126102462987E-14     8.5971775064409
+       11       0.18012453965868E-14     8.5971775076486
+       12       0.18769859943053E-14     8.5971775078318
+       13       0.18172757485601E-14     8.5971775078598
+       14       0.17808434457343E-14     8.5971775078641
+       15       0.17835290311267E-14     8.5971775078648
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.8597177507865E+01
+ Error is    0.1033104665906E-14
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.00
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                 14071.44
+ Mop/s/thread    =                  1758.93
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              23 Mar 2026
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = gfortran
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp -march=native -fallow-invalid-boz
+    FLINKFLAGS   = -O3 -fopenmp -march=native
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+ Performance counter stats for './bin/cg.S.x':
+
+       123,633,403      L1-dcache-loads                                                       
+         8,421,931      L1-dcache-load-misses            #    6.81% of all L1-dcache accesses 
+        10,215,431      cache-references                                                      
+         1,393,022      cache-misses                     #   13.64% of all cache refs         
+
+       0.009304100 seconds time elapsed
+
+       0.059903000 seconds user
+       0.002065000 seconds sys
+
+
+
+
+-----------------------------------------------------------
+ TEST CON 12 HILOS
+-----------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+ Number of available threads:    12
+
+ Initialization time =           0.003 seconds
+
+   iteration           ||r||                 zeta
+        1       0.13660517230019E-12     9.9986441579140
+        2       0.21987642298039E-14     8.5733279203222
+        3       0.21941889954550E-14     8.5954510374058
+        4       0.18666424416490E-14     8.5969972340737
+        5       0.19714090944432E-14     8.5971549151767
+        6       0.19830937051242E-14     8.5971744311608
+        7       0.19174914592868E-14     8.5971770704913
+        8       0.19379243388832E-14     8.5971774440630
+        9       0.19723440375701E-14     8.5971774983942
+       10       0.17598249597074E-14     8.5971775064409
+       11       0.18383617899669E-14     8.5971775076486
+       12       0.17984324350298E-14     8.5971775078318
+       13       0.17723699638035E-14     8.5971775078598
+       14       0.18989666012805E-14     8.5971775078641
+       15       0.17650806439872E-14     8.5971775078648
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.8597177507865E+01
+ Error is    0.1033104665906E-14
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.00
+ Total threads   =                       12
+ Avail threads   =                       12
+ Mop/s total     =                 13596.36
+ Mop/s/thread    =                  1133.03
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              23 Mar 2026
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = gfortran
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp -march=native -fallow-invalid-boz
+    FLINKFLAGS   = -O3 -fopenmp -march=native
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+ Performance counter stats for './bin/cg.S.x':
+
+       124,731,699      L1-dcache-loads                                                       
+         9,541,234      L1-dcache-load-misses            #    7.65% of all L1-dcache accesses 
+        11,942,839      cache-references                                                      
+         1,588,099      cache-misses                     #   13.30% of all cache refs         
+
+       0.009142315 seconds time elapsed
+
+       0.089651000 seconds user
+       0.001054000 seconds sys
+
+
+
+
+-----------------------------------------------------------
+ TEST CON 16 HILOS
+-----------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - CG Benchmark
+
+ Size:        1400
+ Iterations:                     15
+ Number of available threads:    16
+
+ Initialization time =           0.002 seconds
+
+   iteration           ||r||                 zeta
+        1       0.13749317679900E-12     9.9986441579140
+        2       0.21227209110064E-14     8.5733279203222
+        3       0.21424451422258E-14     8.5954510374058
+        4       0.19497738698374E-14     8.5969972340738
+        5       0.20192748298760E-14     8.5971549151767
+        6       0.19757501358059E-14     8.5971744311608
+        7       0.18674757633209E-14     8.5971770704913
+        8       0.18768186420449E-14     8.5971774440630
+        9       0.20891849655147E-14     8.5971774983942
+       10       0.17938813557846E-14     8.5971775064409
+       11       0.17975763954659E-14     8.5971775076486
+       12       0.18264527753437E-14     8.5971775078318
+       13       0.18218092230295E-14     8.5971775078598
+       14       0.18279656602070E-14     8.5971775078641
+       15       0.17521516449620E-14     8.5971775078648
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.8597177507865E+01
+ Error is    0.1033104665906E-14
+
+
+ CG Benchmark Completed.
+ Class           =                        S
+ Size            =                     1400
+ Iterations      =                       15
+ Time in seconds =                     0.01
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                 12969.53
+ Mop/s/thread    =                   810.60
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              23 Mar 2026
+
+ Compile options:
+    F77          = gfortran
+    FLINK        = gfortran
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp -march=native -fallow-invalid-boz
+    FLINKFLAGS   = -O3 -fopenmp -march=native
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+ Performance counter stats for './bin/cg.S.x':
+
+       126,306,383      L1-dcache-loads                                                       
+        10,505,367      L1-dcache-load-misses            #    8.32% of all L1-dcache accesses 
+        13,287,379      cache-references                                                      
+         1,751,527      cache-misses                     #   13.18% of all cache refs         
+
+       0.009516380 seconds time elapsed
+
+       0.119112000 seconds user
+       0.001861000 seconds sys
+
+
