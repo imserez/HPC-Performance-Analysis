@@ -6,9 +6,9 @@
 
 This repository contains an automated, end-to-end DataOps pipeline designed to extract, transform, and visualize High-Performance Computing (HPC) metrics. Specifically, it analyzes the **NAS Parallel Benchmarks (NPB-CG)** to expose the "Memory Wall" effect and evaluate multi-threaded scalability bottlenecks.
 
-> **📑 In-Depth Analysis & Logs:** Inside the [`docs/`](./docs/) directory, you will find my comprehensive analysis of different NAS Parallel Benchmarks, alongside the raw execution logs, mathematical bandwidth models, and detailed architectural breakdowns.
+> **In-Depth Analysis & Logs:** Inside the [`docs/`](./docs/) directory, you will find my comprehensive analysis of different NAS Parallel Benchmarks, alongside the raw execution logs, mathematical bandwidth models, and detailed architectural breakdowns. The report is presented as a concise, 3-page executive summary for rapid technical reading.
 
-## The Problem: The Memory Wall
+## The Problem: The Memory Wall (CG Benchmark)
 
 Sparse matrix computations (like Conjugate Gradient) exhibit highly irregular memory access patterns. This defeats spatial locality in CPU caches, starving the processor of data. This project proves empirically how adding more threads to a memory-bound problem on legacy hardware (Intel Xeon Westmere) leads to performance degradation, and how modern architectures (AMD Ryzen Zen 3) overcome it.
 
@@ -20,22 +20,22 @@ The pipeline automatically generates a suite of advanced visualizations to diagn
 
 ### 1. The Big Picture: Time, Throughput & Instructions
 
-Visualizes the raw performance. Notice how execution time scales (or fails to scale) alongside total instruction overhead.
+Displays the relationship between raw throughput (Mop/s), total execution time, and the overall instruction count across different thread configurations using a multi-axis layout.
 ![Triple Axis Performance](plots/xeon/cg/cg_triple_axis_performance.png)
 
 ### 2. The Smoking Gun: Memory Saturation
 
-This grid correlates the total throughput (bars) with the L1 Cache Miss Rate (line). It visually proves that performance plateaus exactly when the memory bus saturates.
+Correlates the total workload throughput (bars) with the L1 Cache Miss Rate (line). This visualization is designed to identify potential memory bandwidth constraints by contrasting computation speed against cache behavior.
 ![Memory Saturation](plots/xeon/cg/cg_memory_saturation_grid.png)
 
 ### 3. Scaling Efficiency: Parallel Speedup
 
-Calculates $T_1 / T_n$ to show how far the execution deviates from the ideal linear speedup as thread count increases due to oversubscription.
+Tracks the empirical speedup ($T_1 / T_n$) achieved as the thread count increases, plotting it against the theoretical ideal linear scaling to evaluate the parallel efficiency of the workload.
 ![Parallel Speedup](plots/xeon/cg/cg_parallel_speedup.png)
 
 ### 4. Processor Starvation: IPC Efficiency
 
-Shows how Instructions Per Cycle (IPC) plummet as cache misses rise. The processor isn't slow; it's just waiting for RAM.
+Maps Instructions Per Cycle (IPC) alongside LLC (L3) Cache miss rates. This provides insight into how memory hierarchy latency and cache thrashing impact the raw computational efficiency of the CPU cores.
 ![IPC Efficiency](plots/xeon/cg/cg_ipc_efficiency_grid.png)
 
 ---
